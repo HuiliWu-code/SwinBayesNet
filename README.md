@@ -46,7 +46,6 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
 ## File Structure
 
 ```
-.
 ├── Bayesian_model
 │   ├── __init__.py                # Initialization file for the Bayesian model
 │   ├── metrics.py                 # Metrics related to the model evaluation
