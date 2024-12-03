@@ -1,22 +1,23 @@
+
 # SwinBayesNet
 
-SwinBayesNet is a Deep
-Learning Method which is for Search for Hot Subdwarf Stars from SDSS Images, which combining the Swin Transformer and Bayesian Neural Networks. The model is initially trained for two-class and three-class classification using the Swin Transformer. Once the model is trained stably, we freeze the backbone (feature extraction) and replace the output head with a Bayesian neural network to produce the final classification results and uncertainty.The more details are seen in paper.
+**SwinBayesNet** is a deep learning model designed for searching hot subdwarf stars from SDSS images, combining **Swin Transformer** for feature extraction and **Bayesian Neural Networks** for classification and uncertainty estimation. 
 
 ## Contents
 
-- **Backbone: Feature Extraction**: `Swin_transformer_model.py` contains the feature extraction for SDSS Images (5 bands), we have provides two-stage model for two-class classification and two-class classification model.
-- **Head: Classification+Uncertainty**: In the Bayesian_model floder, `Bayesian_head.py` contains the head for SwinBayesNet, we have provides two-stage model for two-class classification (1024 features) and two-class classification (1536) model.
+- **Backbone: Feature Extraction**: `Swin_transformer_model.py` contains the feature extraction for SDSS images (5 bands). We provide two models: one for **two-class classification** and another for **three-class classification**.
+- **Head: Classification + Uncertainty**: In the **Bayesian_model** folder, `Bayesian_head.py` contains the head for **SwinBayesNet**. It provides two models for **two-class classification** (1024 features) and **three-class classification** (1536 features).
 
-```
 ## File Structure
 
-├──Bayesian_model
-  ├── __init__.py       # Swin Transformer model for binary classification
-  ├── metrics.py
-  ├── misc.py
-  ├── BBB_LRT_BBBLinear.py              # Swin Transformer model for ternary classification
-  ├── Bayesian_head.py                  # The Bayesian Model for Head
-├── Swin_transformer_model.py         # The Swin Transformer model 
-└── README.md                         # Project overview and instructions
+```
+.
+├── Bayesian_model
+│   ├── __init__.py             # Initialization file for the Bayesian model
+│   ├── metrics.py             # Metrics related to the model evaluation
+│   ├── misc.py                # Utility functions and helpers
+│   ├── BBB_LRT_BBBLinear.py   # Custom Bayesian Linear Layer (LRT)
+│   ├── Bayesian_head.py       # Bayesian head for SwinBayesNet (classification + uncertainty)
+├── Swin_transformer_model.py  # Swin Transformer backbone for feature extraction
+└── README.md                  # Project overview and instructions
 ```
