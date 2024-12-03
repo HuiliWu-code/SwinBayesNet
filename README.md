@@ -9,14 +9,14 @@ Learning Method which is for Search for Hot Subdwarf Stars from SDSS Images, whi
 - **Head: Classification+Uncertainty**: In the Bayesian_model floder, `Bayesian_head.py` contains the head for SwinBayesNet, we have provides two-stage model for two-class classification (1024 features) and two-class classification (1536) model.
 
 ```
-
 ## File Structure
 
-```
-·
-├── swin_two_classification.py        # Swin Transformer model for binary classification
-├── swin_three_classification.py      # Swin Transformer model for ternary classification
-├── bayesian_head.py                  # Bayesian head for uncertainty estimation
-├── BBB_LRT_BBBLinear.py              # Custom Bayesian Linear Layer
+├──Bayesian_model
+  ├── __init__.py       # Swin Transformer model for binary classification
+  ├── metrics.py
+  ├── misc.py
+  ├── BBB_LRT_BBBLinear.py              # Swin Transformer model for ternary classification
+  ├── Bayesian_head.py                  # The Bayesian Model for Head
+├── Swin_transformer_model.py         # The Swin Transformer model 
 └── README.md                         # Project overview and instructions
 ```
