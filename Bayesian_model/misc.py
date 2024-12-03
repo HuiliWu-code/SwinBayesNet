@@ -1,6 +1,5 @@
 from torch import nn
 
-
 class ModuleWrapper(nn.Module):
     """Wrapper for nn.Module with support for arbitrary flags and a universal forward pass"""
 
