@@ -5,7 +5,7 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
 
 ## Contents
 
-- **Backbone: Feature Extraction**: `Swin_transformer_model.py` contains the feature extraction model for SDSS images with 5 bands. We provide two models: one for two-class classification and one for three-class classification for the two-stage model mentioned in the paper. You can use the following code as an example:
+- **Backbone_Feature Extraction**: `Swin_transformer_model.py` contains the feature extraction model for SDSS images with 5 bands. We provide two models: one for two-class classification and one for three-class classification for the two-stage model mentioned in the paper. You can use the following code as an example:
 
     ```python
     # Swin Transformer model for two-class classification
@@ -23,7 +23,7 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
     print(f"Output shape for three-class classification: {output.shape}")
     ```
 
-- **Head: Classification + Uncertainty**: In the `Bayesian_model` folder, `Bayesian_head.py` contains the head for SwinBayesNet. It provides two models for two-class classification (1024 features) and three-class classification (1536 features). You can use the following code as an example:
+- **Head_Classification + Uncertainty**: In the `Bayesian_model` folder, `Bayesian_head.py` contains the head for SwinBayesNet. It provides two models for two-class classification (1024 features) and three-class classification (1536 features). You can use the following code as an example:
 
     ```python
     # Bayesian model for two-class classification
