@@ -13,6 +13,7 @@ Learning Method which is for Search for Hot Subdwarf Stars from SDSS Images, whi
 ## File Structure
 
 ```
+·
 ├── swin_two_classification.py        # Swin Transformer model for binary classification
 ├── swin_three_classification.py      # Swin Transformer model for ternary classification
 ├── bayesian_head.py                  # Bayesian head for uncertainty estimation
