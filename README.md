@@ -59,6 +59,6 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
 │   ├── BBB_LRT_BBBLinear.py       # Bayesian Linear Layer (LRT)
 │   ├── Bayesian_head.py           # Bayesian head for SwinBayesNet (classification + uncertainty)
 ├── Swin_transformer_model.py      # Swin Transformer backbone for feature extraction
-├── SwinBayesNet                   # The overall of model
+├── SwinBayesNet.png               # The overall of model
 └── README.md                      # Project overview and instructions
 ```
