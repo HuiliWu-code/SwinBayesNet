@@ -2,7 +2,7 @@
 # SwinBayesNet
 
 SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from SDSS images, combining Swin Transformer and Bayesian Neural Networks. The model is initially trained for two-class and three-class classification using the Swin Transformer. Once the model is trained, we freeze the backbone (feature extraction) and replace the output head with a Bayesian neural network to produce the final classification results and estimate uncertainty. For more details, refer to the paper.
-![image](public/SwinBayesNet.png)
+![image](SwinBayesNet/SwinBayesNet.png)
 
 ## Contents
 
