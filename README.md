@@ -36,7 +36,7 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
     extracted_features = torch.ones((1, 1024)).to(device)
     bayesian_model = BayesianHead(input_features=1024, num_classes=2, priors=priors).to(device)
     output, kl_loss = bayesian_model(extracted_features)   # Output and KL loss
-    print(f"Output for two-class classification: {output}")
+    print(f"Output for two-class classification: {output.shape}")
     print(f"KL Loss: {kl_loss}")
     ```
 
@@ -45,7 +45,7 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
     extracted_features = torch.ones((1, 1536)).to(device)
     bayesian_model = BayesianHead(input_features=1536, num_classes=3, priors=priors).to(device)
     output, kl_loss = bayesian_model(extracted_features)   # Output and KL loss
-    print(f"Output for three-class classification: {output}")
+    print(f"Output for three-class classification: {output.shape}")
     print(f"KL Loss: {kl_loss}")
     ```
 
