@@ -8,7 +8,8 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
 ## Contents
 
 - **Backbone: Feature Extraction**
-- `Swin_transformer_model.py` contains the feature extraction model for SDSS images with 5 bands. It provides two models: one for two-class classification and one for three-class classification, as described in the paper's two-stage model. Below is an example of how to use these models:
+
+    `Swin_transformer_model.py` contains the feature extraction model for SDSS images with 5 bands. It provides two models: one for two-class classification and one for three-class classification, as described in the paper's two-stage model. Below is an example of how to use these models:
 
     ```python
     # Swin Transformer model for two-class classification
@@ -26,7 +27,9 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
     print(f"Output shape for three-class classification: {output.shape}")
     ```
 
-- **Head_Classification + Uncertainty**: In the `Bayesian_model` folder, the `Bayesian_head.py` file contains the head for SwinBayesNet. It provides two models for both two-class classification (1024 features) and three-class classification (1536 features). Below is an example of how to use these models:
+- **Head: Classification + Uncertainty**
+
+    In the `Bayesian_model` folder, the `Bayesian_head.py` file contains the head for SwinBayesNet. It provides two models for both two-class classification (1024 features) and three-class classification (1536 features). Below is an example of how to use these models:
 
     ```python
     # Bayesian model for two-class classification
@@ -56,5 +59,6 @@ SwinBayesNet is a deep learning method for searching for Hot Subdwarf Stars from
 │   ├── BBB_LRT_BBBLinear.py       # Bayesian Linear Layer (LRT)
 │   ├── Bayesian_head.py           # Bayesian head for SwinBayesNet (classification + uncertainty)
 ├── Swin_transformer_model.py      # Swin Transformer backbone for feature extraction
+|—— SwinBayesNet                   # The overall of model
 └── README.md                      # Project overview and instructions
 ```
